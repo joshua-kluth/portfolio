@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Your Name Here</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-contact">
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="logo" href="index.html">Your Name Here</a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="primary-navigation" class="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero" aria-labelledby="contact-title">
+      <div class="container">
+        <h1 id="contact-title">Contact</h1>
+        <p>Connect for internships, co-ops, or collaborative engineering projects.</p>
+      </div>
+    </section>
+
+    <section class="contact-details" aria-label="Contact details">
+      <div class="container contact-grid">
+        <div class="contact-info scroll-reveal">
+          <h2>Direct Reach</h2>
+          <ul>
+            <li>Email: <a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+            <li>Location: City, Country</li>
+          </ul>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="GitHub">GitHub</a>
+            <a href="#" aria-label="Additional profile">Portfolio</a>
+          </div>
+        </div>
+        <div class="contact-form-wrapper scroll-reveal">
+          <h2>Message Me</h2>
+          <form class="contact-form" action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="name@example.com" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+
+            <button class="btn primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> Your Name Here. All rights reserved.</p>
+      <p>Focused on aerospace &amp; electrical systems engineering.</p>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume | Your Name Here</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-resume">
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="logo" href="index.html">Your Name Here</a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="primary-navigation" class="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="resume.html" aria-current="page">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="resume-hero" aria-labelledby="resume-title">
+      <div class="container">
+        <h1 id="resume-title">Resume &amp; Downloads</h1>
+        <p>Provide recruiters with direct access to my resume, portfolio snapshots, and supporting documents.</p>
+      </div>
+    </section>
+
+    <section class="resume-section" aria-labelledby="resume-download-title">
+      <div class="container download-grid">
+        <article class="download-card scroll-reveal">
+          <h2 id="resume-download-title">Resume / CV</h2>
+          <p>One-page overview of my aerospace and electrical engineering experience.</p>
+          <a class="btn primary" href="assets/pdfs/YourName_Resume.pdf" download>Download Resume (PDF)</a>
+        </article>
+        <article class="download-card scroll-reveal">
+          <h2>Project Portfolio</h2>
+          <p>Curated PDF with project summaries, diagrams, and outcomes.</p>
+          <a class="btn ghost" href="assets/pdfs/YourName_Portfolio.pdf" download>Download Portfolio (PDF)</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="resume-preview" aria-labelledby="preview-title">
+      <div class="container">
+        <h2 id="preview-title">Quick Preview</h2>
+        <p>Embed optional preview so visitors can skim highlights before downloading.</p>
+        <div class="preview-frame" aria-label="Embedded resume preview">
+          <embed src="assets/pdfs/YourName_Resume.pdf" type="application/pdf" title="Resume preview" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> Your Name Here. All rights reserved.</p>
+      <p>Focused on aerospace &amp; electrical systems engineering.</p>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
