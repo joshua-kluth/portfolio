@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Your Name Here</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-projects">
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="logo" href="index.html">Your Name Here</a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="primary-navigation" class="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="projects-hero" aria-labelledby="projects-title">
+      <div class="container">
+        <h1 id="projects-title">Technical project backlog</h1>
+        <p>Concept through validation for aerospace systems, electrical hardware, simulations, and tooling.</p>
+      </div>
+    </section>
+
+    <section class="project-filter" aria-label="Filter projects">
+      <div class="container">
+        <div class="filter-controls" role="group" aria-label="Project categories">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="personal">Personal Projects</button>
+          <button class="filter-btn" data-filter="university">University Projects</button>
+          <button class="filter-btn" data-filter="other">Other</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-grid-section" aria-label="Project cards">
+      <div class="container project-grid">
+        <article class="project-card scroll-reveal" data-category="personal">
+          <div class="media-placeholder" role="img" aria-label="Project thumbnail placeholder"></div>
+          <div class="card-body">
+            <p class="project-category">Personal</p>
+            <h2>Autonomous UAV Guidance Stack</h2>
+            <p>Developed onboard software and telemetry to coordinate waypoints using sensor fusion.</p>
+            <ul class="tag-list">
+              <li>Aerospace</li>
+              <li>Embedded</li>
+              <li>Python</li>
+            </ul>
+            <a class="text-link" href="project-template.html">View Project</a>
+          </div>
+        </article>
+        <article class="project-card scroll-reveal" data-category="university">
+          <div class="media-placeholder" role="img" aria-label="Project thumbnail placeholder"></div>
+          <div class="card-body">
+            <p class="project-category">University</p>
+            <h2>Electric Propulsion Test Bench</h2>
+            <p>Built instrumentation to characterize high-voltage motor controllers and thermal limits.</p>
+            <ul class="tag-list">
+              <li>Electrical</li>
+              <li>MATLAB</li>
+              <li>Hardware</li>
+            </ul>
+            <a class="text-link" href="project-template.html">View Project</a>
+          </div>
+        </article>
+        <article class="project-card scroll-reveal" data-category="other">
+          <div class="media-placeholder" role="img" aria-label="Project thumbnail placeholder"></div>
+          <div class="card-body">
+            <p class="project-category">Other</p>
+            <h2>Mission Control Dashboard</h2>
+            <p>Web-based telemetry visualization for student rocket launches, integrating REST + WebSocket data.</p>
+            <ul class="tag-list">
+              <li>Visualization</li>
+              <li>Systems</li>
+              <li>JavaScript</li>
+            </ul>
+            <a class="text-link" href="project-template.html">View Project</a>
+          </div>
+        </article>
+        <article class="project-card scroll-reveal" data-category="personal">
+          <div class="media-placeholder" role="img" aria-label="Project thumbnail placeholder"></div>
+          <div class="card-body">
+            <p class="project-category">Personal</p>
+            <h2>High-Altitude Balloon Avionics</h2>
+            <p>Designed redundant power regulation, RF communication, and environmental monitoring hardware.</p>
+            <ul class="tag-list">
+              <li>RF</li>
+              <li>Embedded</li>
+              <li>C++</li>
+            </ul>
+            <a class="text-link" href="project-template.html">View Project</a>
+          </div>
+        </article>
+        <article class="project-card scroll-reveal" data-category="university">
+          <div class="media-placeholder" role="img" aria-label="Project thumbnail placeholder"></div>
+          <div class="card-body">
+            <p class="project-category">University</p>
+            <h2>Reusable Launch Support Tool</h2>
+            <p>Modeled operations constraints and created scheduling software for rocket ground crews.</p>
+            <ul class="tag-list">
+              <li>Systems</li>
+              <li>Optimization</li>
+              <li>Python</li>
+            </ul>
+            <a class="text-link" href="project-template.html">View Project</a>
+          </div>
+        </article>
+        <article class="project-card scroll-reveal" data-category="other">
+          <div class="media-placeholder" role="img" aria-label="Project thumbnail placeholder"></div>
+          <div class="card-body">
+            <p class="project-category">Other</p>
+            <h2>Community Lab Instrumentation</h2>
+            <p>Consulted on low-cost test equipment for a nonprofit makerspace, focusing on safety and calibration.</p>
+            <ul class="tag-list">
+              <li>Consulting</li>
+              <li>Instrumentation</li>
+              <li>Documentation</li>
+            </ul>
+            <a class="text-link" href="project-template.html">View Project</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> Your Name Here. All rights reserved.</p>
+      <p>Focused on aerospace &amp; electrical systems engineering.</p>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
